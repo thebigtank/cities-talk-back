@@ -75,6 +75,7 @@ header .wrapper .row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  cursor: none;
 }
 header .wrapper .logo-area .logo {
   text-transform: uppercase;
