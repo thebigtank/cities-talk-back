@@ -3,10 +3,8 @@
   --dark: #141414;
   --grey: #aaaaaa;
   --crimson: #d61c1a;
-  --maroon: #602120;
   --font-saira: "Saira Extra Condensed", sans-serif;
   --font-sacramento: "Sacramento", cursive;
-  --font-lato: "Lato", sans-serif;
 }
 
 html {
@@ -79,14 +77,6 @@ header .wrapper .logo-area .logo {
 }
 header .wrapper .logo-area .logo span {
   display: block;
-}
-header .wrapper .logo-area .hamburger {
-  padding: 0;
-  transform: scale(0.85);
-  cursor: none;
-}
-header .wrapper .logo-area .hamburger-inner, header .wrapper .logo-area .hamburger-inner::after, header .wrapper .logo-area .hamburger-inner::before {
-  height: 2px;
 }
 header .wrapper .theme {
   text-transform: uppercase;

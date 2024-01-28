@@ -2,17 +2,13 @@
 const cursor = document.querySelector(".custom-cursor");
 const logo = document.querySelector(".logo-area .logo");
 const menuItems = document.querySelectorAll(".header-menu .menu .menu-item");
-const hamburger = document.querySelector(".hamburger");
 
 // Adding event listeners for cursor movement
 document.addEventListener("mousemove", updateCursorPosition);
 
-// Adding event listeners for logo, hamburger, and menu items
+// Adding event listeners for logo, and menu items
 logo.addEventListener("mouseenter", handleHover);
 logo.addEventListener("mouseleave", handleUnhover);
-
-hamburger.addEventListener("mouseenter", handleHover);
-hamburger.addEventListener("mouseleave", handleUnhover);
 
 menuItems.forEach(function(item) {
     item.addEventListener("mouseenter", handleHover);
