@@ -7,10 +7,6 @@
   --font-sacramento: "Sacramento", cursive;
 }
 
-html {
-  cursor: none;
-}
-
 body {
   background-color: var(--light);
   font-family: var(--font-saira);
@@ -55,51 +51,56 @@ body {
   transform: scale(1) translate(-50%, -50%);
 }
 
-header {
-  padding: 20px 0;
-}
-header .wrapper {
+main .wrapper {
   width: 100%;
   margin: 0 auto;
 }
-header .wrapper .row {
+main .row {
   padding: 0 20px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   cursor: none;
 }
-header .wrapper .logo-area .logo {
+main .col {
+  flex: 1;
+}
+main header {
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+main header .logo-area .logo {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 32px;
   margin-bottom: 20px;
 }
-header .wrapper .logo-area .logo span {
+main header .logo-area .logo span {
   display: block;
 }
-header .wrapper .theme {
+main header .theme {
   text-transform: uppercase;
   text-align: center;
 }
-header .wrapper .theme .primary {
+main header .theme .primary {
   color: var(--crimson);
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 4px;
 }
-header .wrapper .theme .secondary {
+main header .theme .secondary {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-header .wrapper .header-menu .menu {
+main header .header-menu .menu {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 20px;
 }
-header .wrapper .header-menu .menu-item a {
+main header .header-menu .menu-item a {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
@@ -110,23 +111,24 @@ header .wrapper .header-menu .menu-item a {
   color: var(--dark);
   cursor: none;
 }
-header .wrapper .main-menu {
-  max-width: 1200px;
-  width: 100%;
+main .documentaries .documentary-menu {
   margin: 0 auto;
-  margin-top: 60px;
 }
-header .wrapper .main-menu .menu {
+main .documentaries .documentary-menu .menu {
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
 }
-header .wrapper .main-menu .menu-item {
+main .documentaries .documentary-menu .menu:hover .menu-item a:not(:hover) {
+  color: var(--grey);
+  opacity: 0.2;
+}
+main .documentaries .documentary-menu .menu-item {
   position: relative;
   text-align: center;
   margin-bottom: 20px;
 }
-header .wrapper .main-menu .menu-item a {
+main .documentaries .documentary-menu .menu-item a {
   text-decoration: none;
   color: var(--dark);
   display: inline-flex;
@@ -134,15 +136,15 @@ header .wrapper .main-menu .menu-item a {
   transition: all 0.3s;
   cursor: none;
 }
-header .wrapper .main-menu .menu-item a span {
+main .documentaries .documentary-menu .menu-item a span {
   display: block;
 }
-header .wrapper .main-menu .menu-item a span.primary {
+main .documentaries .documentary-menu .menu-item a span.primary {
   text-transform: uppercase;
   font-size: 78px;
   font-weight: 800;
 }
-header .wrapper .main-menu .menu-item a span.secondary {
+main .documentaries .documentary-menu .menu-item a span.secondary {
   position: relative;
   top: -22px;
   font-family: var(--font-sacramento);
@@ -150,10 +152,10 @@ header .wrapper .main-menu .menu-item a span.secondary {
   font-style: italic;
   color: transparent;
 }
-header .wrapper .main-menu .menu-item a span.secondary::first-letter {
+main .documentaries .documentary-menu .menu-item a span.secondary::first-letter {
   text-transform: capitalize;
 }
-header .wrapper .main-menu .menu-item video {
+main .documentaries .documentary-menu .menu-item video {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -163,16 +165,12 @@ header .wrapper .main-menu .menu-item video {
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
 }
-header .wrapper .main-menu .menu-item:hover a span.primary {
+main .documentaries .documentary-menu .menu-item:hover a span.primary {
   color: var(--crimson);
 }
-header .wrapper .main-menu .menu-item:hover a span.secondary {
+main .documentaries .documentary-menu .menu-item:hover a span.secondary {
   color: var(--light);
 }
-header .wrapper .main-menu .menu-item:hover video {
+main .documentaries .documentary-menu .menu-item:hover video {
   opacity: 1;
-}
-header .wrapper .main-menu .menu:hover .menu-item a:not(:hover) {
-  color: var(--grey);
-  opacity: 0.2;
 }/*# sourceMappingURL=main.css.map */
