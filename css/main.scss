@@ -20,6 +20,8 @@ body {
     font-weight: 600;
 }
 
+// test the custom cursor line by line
+
 .custom-cursor {
     border-radius: 50%;
     position: fixed;
@@ -30,11 +32,6 @@ body {
     transition-timing-function: cubic-bezier(.6, 0, 0, 1);
     pointer-events: none;
     mix-blend-mode: difference;
-    backdrop-filter: contrast(150%) saturate(500%);
-    -webkit-tap-highlight-color: transparent;
-    -moz-tap-highlight-color: transparent;
-    -ms-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
 
     &::before {
         content: "";
@@ -50,8 +47,7 @@ body {
         box-sizing: border-box;
         transform: scale(1.4);
         box-shadow: inset 0 0 0 10px var(--light);
-        transition: transform,
-            box-shadow;
+        transition: transform, box-shadow;
         transition-duration: .5s;
         transition-timing-function: cubic-bezier(.6, 0, 0, 1);
     }

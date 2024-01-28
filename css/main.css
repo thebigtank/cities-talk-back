@@ -29,12 +29,6 @@ body {
   transition-timing-function: cubic-bezier(0.6, 0, 0, 1);
   pointer-events: none;
   mix-blend-mode: difference;
-  -webkit-backdrop-filter: contrast(150%) saturate(500%);
-          backdrop-filter: contrast(150%) saturate(500%);
-  -webkit-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
-  -ms-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
 }
 .custom-cursor::before {
   content: "";

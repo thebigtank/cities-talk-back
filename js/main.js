@@ -1,4 +1,4 @@
-// 1. get all videos
+// 1. get the videos
 const videos = document.querySelectorAll('video');
 
 // 2. loop through each video
